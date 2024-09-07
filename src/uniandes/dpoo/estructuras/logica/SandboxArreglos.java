@@ -1,5 +1,6 @@
 package uniandes.dpoo.estructuras.logica;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -42,7 +43,8 @@ public class SandboxArreglos
      */
     public int[] getCopiaEnteros( )
     {
-        return null;
+    	int [] copiaEnteros = this.arregloEnteros;
+        return copiaEnteros;
     }
 
     /**
@@ -51,7 +53,8 @@ public class SandboxArreglos
      */
     public String[] getCopiaCadenas( )
     {
-        return null;
+    	String[] copiaCadenas = this.arregloCadenas;
+        return copiaCadenas;
     }
 
     /**
@@ -60,7 +63,8 @@ public class SandboxArreglos
      */
     public int getCantidadEnteros( )
     {
-        return -1;
+    	int cantidadEnteros = this.arregloEnteros.length;
+        return cantidadEnteros;
     }
 
     /**
@@ -69,7 +73,8 @@ public class SandboxArreglos
      */
     public int getCantidadCadenas( )
     {
-        return -1;
+    	int cantidadCarateres = this.arregloCadenas.length;
+        return cantidadCarateres;
     }
 
     /**
@@ -79,6 +84,8 @@ public class SandboxArreglos
      */
     public void agregarEntero( int entero )
     {
+    	this.arregloEnteros = ArrayList.toArray(arregloEnteros);
+    	
 
     }
 
