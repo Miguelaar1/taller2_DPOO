@@ -203,6 +203,7 @@ public class SandboxConjuntos
         	int i = 0;
         	while(equal && i < this.arbolCadenas.size()) {
         		if (!this.arbolCadenas.contains(otroArreglo[i])) equal = false;
+        		i++;
         	}
         }
         return equal;
