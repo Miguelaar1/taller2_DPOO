@@ -43,7 +43,7 @@ public class SandboxArreglos
      */
     public int[] getCopiaEnteros( )
     {
-    	int [] copiaEnteros = this.arregloEnteros;
+    	int [] copiaEnteros = this.arregloEnteros.clone();
         return copiaEnteros;
     }
 
@@ -53,7 +53,7 @@ public class SandboxArreglos
      */
     public String[] getCopiaCadenas( )
     {
-    	String[] copiaCadenas = this.arregloCadenas;
+    	String[] copiaCadenas = this.arregloCadenas.clone();
         return copiaCadenas;
     }
 
@@ -66,7 +66,7 @@ public class SandboxArreglos
     	int cantidadEnteros = this.arregloEnteros.length;
         return cantidadEnteros;
     }
-
+    
     /**
      * Retorna la cantidad de valores en el arreglo de cadenas
      * @return
@@ -76,7 +76,7 @@ public class SandboxArreglos
     	int cantidadCarateres = this.arregloCadenas.length;
         return cantidadCarateres;
     }
-
+    
     /**
      * Agrega un nuevo valor al final del arreglo. Es decir que este método siempre debería aumentar en 1 la capacidad del arreglo.
      * 
@@ -84,9 +84,7 @@ public class SandboxArreglos
      */
     public void agregarEntero( int entero )
     {
-    	this.arregloEnteros = ArrayList.toArray(arregloEnteros);
     	
-
     }
 
     /**

@@ -312,8 +312,7 @@ public class SandboxListas
     		} else i--;
     		if (this.listaEnteros.size() % range == 0) {
     			min = this.listaEnteros.size()/range + 1;
-    		}
-    		
+    		}	
     	}
     }
 }
